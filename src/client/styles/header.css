@@ -1,5 +1,29 @@
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px 40px;
+    background-color: #11698e;
+    height: 10vh;
+    color: #FFFFFF;
+}
+
+.logo {
+    height: 10vh;
+    line-height: 10vh;
+    flex-basis: auto;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav {
+    height: 10vh;
+    line-height: 10vh;
+    flex-basis: auto;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+    margin-right: 20px;
 }

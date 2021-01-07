@@ -6,9 +6,14 @@ body {
 
 main {
     flex: 2;
+    background-color: #e7d9ea;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
     max-width: 800px;
-    margin: 50px auto;
+    margin: auto;
 }
+
+
