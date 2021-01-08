@@ -36,9 +36,6 @@ function callSentimentApi(req, res){
     getSentiment(baseURL, key, req.body.text)
     .then(function(data){
         res.send({agreement: data.agreement, subjectivity: data.subjectivity});
-        //postData('/addSentimentData', {agreement: data.agreement, subjectivity: data.subjectivity})
-    
-        //updateUI();
     })
 };
 

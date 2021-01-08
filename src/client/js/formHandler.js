@@ -12,12 +12,12 @@ function handleSubmit(event) {
         getMySentiment('/getSentiment', {text: text})
 
         .then(function(data){
-            // postData('/addSentimentData', {sentiment: data.main.temp, date: data.dt, feelings: feelings})
-        
             updateUI(data);
+            return true;
         });
     } else {
         document.getElementById("warning").innerHTML = "Must enter text";
+        return false;
     }
 }
 
@@ -41,7 +41,6 @@ const getMySentiment = async (url='', text={})=>{
 
 const updateUI =(data)=> {
     document.getElementById("results").innerHTML = 'agreement = ' + data.agreement + ". subjectivity = " + data.subjectivity;
-
 }
 
 
