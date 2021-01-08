@@ -1,7 +1,12 @@
 import { containsText } from "..";
-
+document.addEventListener('DOMContentLoaded', function () {
 const btn_submit = document.getElementById('btn_submit');
 btn_submit.addEventListener('click', handleSubmit);
+});
+
+function forTesting(){
+    return true;
+}
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -41,7 +46,8 @@ const getMySentiment = async (url='', text={})=>{
 
 const updateUI =(data)=> {
     document.getElementById("results").innerHTML = 'agreement = ' + data.agreement + ". subjectivity = " + data.subjectivity;
+    return true;
 }
 
 
-export { handleSubmit }
+export { handleSubmit, updateUI, forTesting }

@@ -44,6 +44,7 @@ const getSentiment = async (baseURL, key, text)=>{
     const res = await fetch(full_url);
     try {
         const data = await res.json();
+        console.log(data)
         return data;
     } catch(error) {
         console.log(error);
